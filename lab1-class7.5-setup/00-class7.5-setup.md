@@ -1,0 +1,345 @@
+# [Class 7.5 - installation walkthrough (WIP)](https://docs.google.com/document/d/10fDf4KzM_wglVJeTZzeJ2DiJ40gYX32lAubteQ9a-T8/edit?tab=t.0#heading=h.dbj957a6wnz9)
+
+Theo University - Class 7.5 / SEIR-1 (GCP, March 2026)
+
+---
+
+# Table of Contents
+
+- [Prerequisites Setup](#prerequisites-setup)
+- [Verify Tool Installation](#verify-tool-installation)
+- [3) Google Cloud Console](#3-google-cloud-platform)
+- [Create Your First Project](#create-your-first-project)
+- [Enable GCP Services API](#enable-gcp-services-api)
+- [Create Price Alerts](#create-price-alerts)
+- [Create a Service Account](#create-a-service-account)
+- [Grant This Service Account Access to Project](#grant-this-service-account-access-to-project)
+- [Create Keys for Service Account](#create-keys-for-service-account)
+- [Deliverable](#deliverable)
+- [4) GCP CLI](#4-gcp-cli)
+- [Deliverable](#deliverable-1)
+
+
+---
+
+# Prerequisites Setup
+
+For Mac run:
+
+```bash
+curl https://raw.githubusercontent.com/rofoed01/scripts_homebrew/refs/heads/main/brew_install_SEIR-1.command | sh
+```
+
+Takes a while, let it set up.
+
+![00-brew-install](./screenshots/00-brew-install.png)
+
+Check and see if there were any errors. Log locations for the Windows and Mac installs are below.
+
+Mac = Users/**YOUR USERNAME**/Documents/TheoWAF/Logs
+
+![01-setup-confirm](./screenshots/01-setup-confirm.png)
+
+---
+
+# Verify Tool Installation
+
+Open the command line tool for your machine and run the below commands to ensure everything is working.
+
+1. `python --version`
+   - did not install with the provided code
+   - run `brew install python`
+
+The problem is Apple removed the python command and only supports python3 so check with:
+
+```bash
+python3 --version
+```
+
+2. `terraform --version`
+
+3. `gcloud version`
+
+![02-confirm-working](./screenshots/02-confirm-working.png)
+
+---
+
+# 3. Google Cloud Platform 
+
+[click here](https://console.cloud.google.com/)
+
+![03-activated-gcp](./screenshots/03-activated-gcp.png)
+
+---
+
+# Create Your First Project
+
+Click this link:
+
+https://console.cloud.google.com/projectcreate
+
+Give your project a unique name, like:
+
+- TheoWAF-class7.5-insertYourNameHere
+- class75-myNameHere
+
+Example:
+
+class7.5_iLoveDanksDimples
+
+Click **Create**
+
+![04-create-project](./screenshots/04-create-project.png)
+
+---
+
+# Enable GCP Services API
+
+In the search bar, type in **Compute Engine** and click on **VM Instances**
+
+You’ll then be presented with a screen asking you to enable the service.
+
+Click **Enable**
+
+If prompted for a billing account:
+
+- select your recently created billing account
+- click **Set Account**
+
+After that wait a minute or two for the process to finish.
+
+Make sure you are signed into the correct Google account or billing/project owner account.
+
+### Make sure you are signed into the same Google account that created the project.
+
+### In the top project selector confirm you selected the correct project:
+
+![05](./screenshots/05.png)
+
+Enable and wait a couple minutes for the process to finish.
+
+![06](./screenshots/06.png)
+
+---
+
+# Create Price Alerts
+
+Search bar → **Budgets & Alerts**
+
+Click **Create Budget**
+
+![07](./screenshots/07.png)
+
+## Scope
+
+Name
+
+Class 7.5 Budget
+
+Time range
+
+Monthly
+
+Leave all other options as default.
+
+Click **Next**
+
+![08](./screenshots/08.png)
+
+---
+
+## Amount
+
+Budget type
+
+Specified amount
+
+Target amount
+
+$5
+
+Amount can be whatever you want to spend.
+
+Click **Next**
+
+![09](./screenshots/09.png)
+
+---
+
+## Actions
+
+Customize alerts to your preference.
+
+Click **Finish**
+
+![10](./screenshots/10.png)
+
+---
+
+# Create a Service Account
+
+Search bar → **Service Accounts**
+
+Select your desired project for the service account.
+
+*(You will need to create a service account for every project you want to have.)*
+
+Click **Create Service Account**
+
+![11](./screenshots/11.png)
+
+---
+
+## Service Account Details
+
+Service account name
+
+terraform-service
+
+Service account ID will automatically generate (do not edit this)
+
+Service account description
+
+terraform service account for (insert project name here)
+
+Click **Create and Continue**
+
+![12](./screenshots/12.png)
+
+---
+
+# Grant This Service Account Access to Project
+
+Click on the **email link**
+
+![13](./screenshots/13.png)
+
+Permissions tab → Manage Access (side window opens)
+
+Click the Role box and type:
+
+Owner
+
+Click **Add another role** and add:
+
+- Storage Admin
+- Artifact Registry Administrator
+
+Click **Save**
+
+![14](./screenshots/14.png)
+
+~~Grant users access to this service account  
+Click done~~
+
+---
+
+# Create Keys for Service Account
+
+Go back to the service account page.
+
+Select the row.
+
+Under the **Actions** column on the far right click the **3 vertical dots**.
+
+Select **Manage Keys**
+
+![15](./screenshots/15.png)
+
+Click:
+
+Add key → Create New Key
+
+![16](./screenshots/16.png)
+
+In the popup window make sure **JSON** is selected and click **Create**
+
+![17](./screenshots/17.png)
+
+The key is now saved to your computer.
+
+Move the key to your Terraform folder:
+
+Documents/TheoWAF/class7.5/GCP/Terraform
+
+---
+
+# Deliverable
+
+Take and submit a screenshot of your Terraform service account `.json` file once you have moved it to the above file path.
+
+![18](./screenshots/18.png)
+
+---
+
+# 4. GCP CLI
+
+a. **Official sources (for reference)**
+- [Google SDK instructions](https://cloud.google.com/sdk/docs/install-sdk)
+- [Gcloud “getting started” guide](https://codelabs.developers.google.com/codelabs/cloud-shell#0) 
+
+b. **Preliminary setup (have you done these steps?)**
+- Sign into [GCP](https://console.cloud.google.com) with your personal Gmail account
+- Chocolatey / Homebrew installs from above, or installing the GCP SDK from [here](https://cloud.google.com/sdk/docs/install-sdk)
+
+d **Windows users**
+
+c **Mac / Linux users**
+- Initialize gcloud
+  - Open the terminal
+  - Type the following command:
+
+run
+```bash
+gcloud init
+```
+
+  - From there, the shell will open a browser window, prompting you to sign in with the Gmail account used for GCP
+  - After doing this, you’ll then be prompted to set up some account defaults; you can accept the defaults for the time being.
+  - Choose your desired project (one will have a random name, but show up as “My First Project” in the GUI)
+  - When prompted to set a default region, say “N”
+
+
+It will:
+- Open a browser login
+- Ask which Google account to use
+- Ask which project to set as default
+- Choose your project:
+  - 1
+Do you want to configure a default Compute Region and Zone? (Y/n)?
+  - Y
+Which Google Compute Engine zone would you like to use as project default?
+  - us-east1
+
+```bash
+gcloud components update
+```
+
+![18b](./screenshots/18b.png)
+
+![18c](./screenshots/18c.png)
+
+![19](./screenshots/19.png)
+
+![20](./screenshots/20.png)
+
+![21](./screenshots/21.png)
+
+![22](./screenshots/22.png)
+
+```bash
+gcloud info
+```
+
+---
+
+# Deliverable
+
+![23](./screenshots/23.png)
+
+
+My-Class7-GCP-notes
+
+
+# My-Class7-GCP-notes
+Hands-on notes and walkthroughs for Google Cloud Platform tools, setup, and labs completed in Class 7.
