@@ -317,8 +317,6 @@ gcloud components update
 
 ![18b](./screenshots/18b.png)
 
-![18c](./screenshots/18c.png)
-
 ![19](./screenshots/19.png)
 
 ![20](./screenshots/20.png)
