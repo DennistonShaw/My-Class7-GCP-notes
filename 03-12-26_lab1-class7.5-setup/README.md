@@ -15,9 +15,9 @@ Theo University - Class 7.5 / SEIR-1 (GCP, March 2026)
 - [Create a Service Account](#create-a-service-account)
 - [Grant This Service Account Access to Project](#grant-this-service-account-access-to-project)
 - [Create Keys for Service Account](#create-keys-for-service-account)
-- [Deliverable](#deliverable)
+- [Deliverable 1](#deliverable-1)
 - [4) GCP CLI](#4-gcp-cli)
-- [Deliverable](#deliverable-1)
+- [Deliverable 2](#deliverable-2)
 
 
 ---
@@ -39,6 +39,7 @@ Check and see if there were any errors. Log locations for the Windows and Mac in
 Mac = Users/**YOUR USERNAME**/Documents/TheoWAF/Logs
 
 ![01-setup-confirm](./screenshots/01-setup-confirm.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -61,12 +62,11 @@ python3 --version
 3. `gcloud version`
 
 ![02-confirm-working](./screenshots/02-confirm-working.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
-# 3. Google Cloud Platform 
-
-[click here](https://console.cloud.google.com/)
+# 3. [Google Cloud Platform](https://console.cloud.google.com/)
 
 ![03-activated-gcp](./screenshots/03-activated-gcp.png)
 
@@ -90,6 +90,7 @@ class7.5_iLoveDanksDimples
 Click **Create**
 
 ![04-create-project](./screenshots/04-create-project.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -119,6 +120,7 @@ Make sure you are signed into the correct Google account or billing/project owne
 Enable and wait a couple minutes for the process to finish.
 
 ![06](./screenshots/06.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -145,6 +147,7 @@ Leave all other options as default.
 Click **Next**
 
 ![08](./screenshots/08.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -163,6 +166,7 @@ Amount can be whatever you want to spend.
 Click **Next**
 
 ![09](./screenshots/09.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -173,6 +177,7 @@ Customize alerts to your preference.
 Click **Finish**
 
 ![10](./screenshots/10.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -187,6 +192,7 @@ Select your desired project for the service account.
 Click **Create Service Account**
 
 ![11](./screenshots/11.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -205,6 +211,7 @@ terraform service account for (insert project name here)
 Click **Create and Continue**
 
 ![12](./screenshots/12.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -231,6 +238,7 @@ Click **Save**
 
 ~~Grant users access to this service account  
 Click done~~
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -261,14 +269,16 @@ The key is now saved to your computer.
 Move the key to your Terraform folder:
 
 Documents/TheoWAF/class7.5/GCP/Terraform
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
-# Deliverable
+# Deliverable 1
 
 Take and submit a screenshot of your Terraform service account `.json` file once you have moved it to the above file path.
 
 ![18](./screenshots/18.png)
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
@@ -333,9 +343,11 @@ gcloud components update
 gcloud info
 ```
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ---
 
-# Deliverable
+# Deliverable 2
 
 ![23](./screenshots/23.png)
 
@@ -345,3 +357,4 @@ My-Class7-GCP-notes
 
 # My-Class7-GCP-notes
 Hands-on notes and walkthroughs for Google Cloud Platform tools, setup, and labs completed in Class 7.
+<sub>[Back to top](#table-of-contents)</sub>
