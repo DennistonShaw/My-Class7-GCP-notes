@@ -310,13 +310,7 @@ Do you want to configure a default Compute Region and Zone? (Y/n)?
   - Y
 Which Google Compute Engine zone would you like to use as project default?
   - us-east1
-
-```bash
-gcloud components update
-```
-
-![18b](./screenshots/18b.png)
-
+  - 
 ![19](./screenshots/19.png)
 
 ![20](./screenshots/20.png)
@@ -324,6 +318,16 @@ gcloud components update
 ![21](./screenshots/21.png)
 
 ![22](./screenshots/22.png)
+
+
+```bash
+gcloud components update
+```
+
+![22a](./screenshots/22a.png)
+
+![22b](./screenshots/22b.png)
+
 
 ```bash
 gcloud info
