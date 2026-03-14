@@ -374,6 +374,13 @@ Hands-on notes and walkthroughs for Google Cloud Platform tools, setup, and labs
 
 # Deliverable 3
 
+Datat protection no backup
+Network  Allow HTTP
+add Automation script from Theo's Github
+
 ![24](./3-10-26_screenshots/24.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+Teardown 
+- click instances and press delete
