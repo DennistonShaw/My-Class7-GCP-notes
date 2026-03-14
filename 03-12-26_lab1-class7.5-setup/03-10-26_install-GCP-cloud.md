@@ -363,14 +363,9 @@ gcloud info
 
 ![23](./3-10-26_screenshots/23.png)
 
-
-My-Class7-GCP-notes
-
-
-# My-Class7-GCP-notes
-Hands-on notes and walkthroughs for Google Cloud Platform tools, setup, and labs completed in Class 7.
-
 <sub>[Back to top](#table-of-contents)</sub>
+
+---
 
 # Deliverable 3
 
@@ -382,5 +377,9 @@ add Automation script from Theo's Github
 
 <sub>[Back to top](#table-of-contents)</sub>
 
+---
+
 Teardown 
 - click instances and press delete
+
+---
