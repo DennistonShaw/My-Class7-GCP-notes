@@ -18,6 +18,7 @@ Theo University - Class 7.5 / SEIR-1 (GCP, March 2026)
 - [Deliverable 1](#deliverable-1)
 - [4) GCP CLI](#4-gcp-cli)
 - [Deliverable 2](#deliverable-2)
+- [Deliverable 3](#deliverable-3)
 
 
 ---
@@ -32,13 +33,13 @@ curl https://raw.githubusercontent.com/rofoed01/scripts_homebrew/refs/heads/main
 
 Takes a while, let it set up.
 
-![00-brew-install](./screenshots/00-brew-install.png)
+![00-brew-install](./3-10-26_screenshots/00-brew-install.png)
 
 Check and see if there were any errors. Log locations for the Windows and Mac installs are below.
 
 Mac = Users/**YOUR USERNAME**/Documents/TheoWAF/Logs
 
-![01-setup-confirm](./screenshots/01-setup-confirm.png)
+![01-setup-confirm](./3-10-26_screenshots/01-setup-confirm.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -62,7 +63,7 @@ python3 --version
 
 3. `gcloud version`
 
-![02-confirm-working](./screenshots/02-confirm-working.png)
+![02-confirm-working](./3-10-26_screenshots/02-confirm-working.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -70,7 +71,7 @@ python3 --version
 
 # 3. [Google Cloud Platform](https://console.cloud.google.com/)
 
-![03-activated-gcp](./screenshots/03-activated-gcp.png)
+![03-activated-gcp](./3-10-26_screenshots/03-activated-gcp.png)
 
 ---
 
@@ -91,7 +92,7 @@ class7.5_iLoveDanksDimples
 
 Click **Create**
 
-![04-create-project](./screenshots/04-create-project.png)
+![04-create-project](./3-10-26_screenshots/04-create-project.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -118,11 +119,11 @@ Make sure you are signed into the correct Google account or billing/project owne
 
 ### In the top project selector confirm you selected the correct project:
 
-![05](./screenshots/05.png)
+![05](./3-10-26_screenshots/05.png)
 
 Enable and wait a couple minutes for the process to finish.
 
-![06](./screenshots/06.png)
+![06](./3-10-26_screenshots/06.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -134,7 +135,7 @@ Search bar → **Budgets & Alerts**
 
 Click **Create Budget**
 
-![07](./screenshots/07.png)
+![07](./3-10-26_screenshots/07.png)
 
 ## Scope
 
@@ -150,7 +151,7 @@ Leave all other options as default.
 
 Click **Next**
 
-![08](./screenshots/08.png)
+![08](./3-10-26_screenshots/08.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -170,7 +171,7 @@ Amount can be whatever you want to spend.
 
 Click **Next**
 
-![09](./screenshots/09.png)
+![09](./3-10-26_screenshots/09.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -182,7 +183,7 @@ Customize alerts to your preference.
 
 Click **Finish**
 
-![10](./screenshots/10.png)
+![10](./3-10-26_screenshots/10.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -198,7 +199,7 @@ Select your desired project for the service account.
 
 Click **Create Service Account**
 
-![11](./screenshots/11.png)
+![11](./3-10-26_screenshots/11.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -218,7 +219,7 @@ terraform service account for (insert project name here)
 
 Click **Create and Continue**
 
-![12](./screenshots/12.png)
+![12](./3-10-26_screenshots/12.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -228,7 +229,7 @@ Click **Create and Continue**
 
 Click on the **email link**
 
-![13](./screenshots/13.png)
+![13](./3-10-26_screenshots/13.png)
 
 Permissions tab → Manage Access (side window opens)
 
@@ -243,7 +244,7 @@ Click **Add another role** and add:
 
 Click **Save**
 
-![14](./screenshots/14.png)
+![14](./3-10-26_screenshots/14.png)
 
 ~~Grant users access to this service account  
 Click done~~
@@ -262,17 +263,17 @@ Under the **Actions** column on the far right click the **3 vertical dots**.
 
 Select **Manage Keys**
 
-![15](./screenshots/15.png)
+![15](./3-10-26_screenshots/15.png)
 
 Click:
 
 Add key → Create New Key
 
-![16](./screenshots/16.png)
+![16](./3-10-26_screenshots/16.png)
 
 In the popup window make sure **JSON** is selected and click **Create**
 
-![17](./screenshots/17.png)
+![17](./3-10-26_screenshots/17.png)
 
 The key is now saved to your computer.
 
@@ -287,7 +288,7 @@ Documents/TheoWAF/class7.5/GCP/Terraform
 
 Take and submit a screenshot of your Terraform service account `.json` file once you have moved it to the above file path.
 
-![18](./screenshots/18.png)
+![18](./3-10-26_screenshots/18.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -332,22 +333,22 @@ Do you want to configure a default Compute Region and Zone? (Y/n)?
 Which Google Compute Engine zone would you like to use as project default?
   - us-east1
   - 
-![19](./screenshots/19.png)
+![19](./3-10-26_screenshots/19.png)
 
-![20](./screenshots/20.png)
+![20](./3-10-26_screenshots/20.png)
 
-![21](./screenshots/21.png)
+![21](./3-10-26_screenshots/21.png)
 
-![22](./screenshots/22.png)
+![22](./3-10-26_screenshots/22.png)
 
 
 ```bash
 gcloud components update
 ```
 
-![22a](./screenshots/22a.png)
+![22a](./3-10-26_screenshots/22a.png)
 
-![22b](./screenshots/22b.png)
+![22b](./3-10-26_screenshots/22b.png)
 
 
 ```bash
@@ -360,7 +361,7 @@ gcloud info
 
 # Deliverable 2
 
-![23](./screenshots/23.png)
+![23](./3-10-26_screenshots/23.png)
 
 
 My-Class7-GCP-notes
@@ -368,5 +369,11 @@ My-Class7-GCP-notes
 
 # My-Class7-GCP-notes
 Hands-on notes and walkthroughs for Google Cloud Platform tools, setup, and labs completed in Class 7.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+# Deliverable 3
+
+![24](./3-10-26_screenshots/24.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
