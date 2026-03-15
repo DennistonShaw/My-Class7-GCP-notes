@@ -382,24 +382,25 @@ don't use My First Project (looks unprofessional). Go to the project you created
 ![25](./3-10-26_screenshots/25.png)
 
 3. see the menu on the left hand side:
-- note: click create after you've gone through all the sections changes
-- Machine configuration (no changes)
+- note: don't click create until the end after you've gone through all the section's changes (1-7)
+
+#### 1. Machine configuration (no changes)
   
 ![26](./3-10-26_screenshots/26.png)
 
-#### OS and Storage (no changes)
-#### Data Protection (select No backups)
+#### 2. OS and Storage (no changes)
+#### 3. Data Protection (select No backups)
 
 ![27](./3-10-26_screenshots/27.png)
 
-#### Network  
+#### 4. Network  
 - check Allow HTTP
 
 ![28](./3-10-26_screenshots/28.png)
 
-#### Observability (no changes)
-#### Securtity (no changes)
-#### Advanced
+#### 5. Observability (no changes)
+#### 6. Securtity (no changes)
+#### 7. Advanced
 - copy [Startup script](https://github.com/BalericaAI/SEIR-1/blob/main/weekly_lessons/weeka/userscripts/basic.sh) (user data) and paste it in Automation box 
 
 ![29](./3-10-26_screenshots/29.png)
