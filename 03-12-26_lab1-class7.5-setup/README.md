@@ -35,13 +35,13 @@ curl https://raw.githubusercontent.com/rofoed01/scripts_homebrew/refs/heads/main
 
 Takes a while, let it set up.
 
-![00-brew-install](./3-10-26_screenshots/00-brew-install.png)
+![00-brew-install](./screenshots/00-brew-install.png)
 
 Check and see if there were any errors. Log locations for the Windows and Mac installs are below.
 
 Mac = Users/**YOUR USERNAME**/Documents/TheoWAF/Logs
 
-![01-setup-confirm](./3-10-26_screenshots/01-setup-confirm.png)
+![01-setup-confirm](./screenshots/01-setup-confirm.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -65,7 +65,7 @@ python3 --version
 
 3. `gcloud version`
 
-![02-confirm-working](./3-10-26_screenshots/02-confirm-working.png)
+![02-confirm-working](./screenshots/02-confirm-working.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -73,7 +73,7 @@ python3 --version
 
 # 3. [Google Cloud Platform](https://console.cloud.google.com/)
 
-![03-activated-gcp](./3-10-26_screenshots/03-activated-gcp.png)
+![03-activated-gcp](./screenshots/03-activated-gcp.png)
 
 ---
 
@@ -94,7 +94,7 @@ class7.5_iLoveDanksDimples
 
 Click **Create**
 
-![04-create-project](./3-10-26_screenshots/04-create-project.png)
+![04-create-project](./screenshots/04-create-project.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -121,11 +121,11 @@ Make sure you are signed into the correct Google account or billing/project owne
 
 ### In the top project selector confirm you selected the correct project:
 
-![05](./3-10-26_screenshots/05.png)
+![05](./screenshots/05.png)
 
 Enable and wait a couple minutes for the process to finish.
 
-![06](./3-10-26_screenshots/06.png)
+![06](./screenshots/06.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -137,7 +137,7 @@ Search bar → **Budgets & Alerts**
 
 Click **Create Budget**
 
-![07](./3-10-26_screenshots/07.png)
+![07](./screenshots/07.png)
 
 ## Scope
 
@@ -153,7 +153,7 @@ Leave all other options as default.
 
 Click **Next**
 
-![08](./3-10-26_screenshots/08.png)
+![08](./screenshots/08.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -173,7 +173,7 @@ Amount can be whatever you want to spend.
 
 Click **Next**
 
-![09](./3-10-26_screenshots/09.png)
+![09](./screenshots/09.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -185,7 +185,7 @@ Customize alerts to your preference.
 
 Click **Finish**
 
-![10](./3-10-26_screenshots/10.png)
+![10](./screenshots/10.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -201,7 +201,7 @@ Select your desired project for the service account.
 
 Click **Create Service Account**
 
-![11](./3-10-26_screenshots/11.png)
+![11](./screenshots/11.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -221,7 +221,7 @@ terraform service account for (insert project name here)
 
 Click **Create and Continue**
 
-![12](./3-10-26_screenshots/12.png)
+![12](./screenshots/12.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -231,7 +231,7 @@ Click **Create and Continue**
 
 Click on the **email link**
 
-![13](./3-10-26_screenshots/13.png)
+![13](./screenshots/13.png)
 
 Permissions tab → Manage Access (side window opens)
 
@@ -246,7 +246,7 @@ Click **Add another role** and add:
 
 Click **Save**
 
-![14](./3-10-26_screenshots/14.png)
+![14](./screenshots/14.png)
 
 ~~Grant users access to this service account  
 Click done~~
@@ -265,17 +265,17 @@ Under the **Actions** column on the far right click the **3 vertical dots**.
 
 Select **Manage Keys**
 
-![15](./3-10-26_screenshots/15.png)
+![15](./screenshots/15.png)
 
 Click:
 
 Add key → Create New Key
 
-![16](./3-10-26_screenshots/16.png)
+![16](./screenshots/16.png)
 
 In the popup window make sure **JSON** is selected and click **Create**
 
-![17](./3-10-26_screenshots/17.png)
+![17](./screenshots/17.png)
 
 The key is now saved to your computer.
 
@@ -290,7 +290,7 @@ Documents/TheoWAF/class7.5/GCP/Terraform
 
 Take and submit a screenshot of your Terraform service account `.json` file once you have moved it to the above file path.
 
-![18](./3-10-26_screenshots/18.png)
+![18](./screenshots/18.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -335,22 +335,22 @@ Do you want to configure a default Compute Region and Zone? (Y/n)?
 Which Google Compute Engine zone would you like to use as project default?
   - us-east1
   - 
-![19](./3-10-26_screenshots/19.png)
+![19](./screenshots/19.png)
 
-![20](./3-10-26_screenshots/20.png)
+![20](./screenshots/20.png)
 
-![21](./3-10-26_screenshots/21.png)
+![21](./screenshots/21.png)
 
-![22](./3-10-26_screenshots/22.png)
+![22](./screenshots/22.png)
 
 
 ```bash
 gcloud components update
 ```
 
-![22a](./3-10-26_screenshots/22a.png)
+![22a](./screenshots/22a.png)
 
-![22b](./3-10-26_screenshots/22b.png)
+![22b](./screenshots/22b.png)
 
 
 ```bash
@@ -363,7 +363,7 @@ gcloud info
 
 # Deliverable 2
 
-![23](./3-10-26_screenshots/23.png)
+![23](./screenshots/23.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -374,45 +374,45 @@ gcloud info
 1. After creating your Google Cloud account go to https://console.cloud.google.com/
 don't use My First Project (looks unprofessional). Go to the project you created
 
-![24](./3-10-26_screenshots/24.png)
+![24](./screenshots/24.png)
 
 2. Create a VM
 - click the box or search for Create VM in the search box at the top
 
-![25](./3-10-26_screenshots/25.png)
+![25](./screenshots/25.png)
 
 3. see the menu on the left hand side:
 - note: don't click create until the end after you've gone through all the section's changes (1-7)
 
 #### 1. Machine configuration (no changes)
   
-![26](./3-10-26_screenshots/26.png)
+![26](./screenshots/26.png)
 
 #### 2. OS and Storage (no changes)
 #### 3. Data Protection (select No backups)
 
-![27](./3-10-26_screenshots/27.png)
+![27](./screenshots/27.png)
 
 #### 4. Network  
 - check Allow HTTP
 
-![28](./3-10-26_screenshots/28.png)
+![28](./screenshots/28.png)
 
 #### 5. Observability (no changes)
 #### 6. Securtity (no changes)
 #### 7. Advanced
 - copy [Startup script](https://github.com/BalericaAI/SEIR-1/blob/main/weekly_lessons/weeka/userscripts/basic.sh) (user data) and paste it in Automation box 
 
-![29](./3-10-26_screenshots/29.png)
+![29](./screenshots/29.png)
 
 click - Create
  
-![30](./3-10-26_screenshots/30.png)
+![30](./screenshots/30.png)
 
 #### Verify it works
 - copy the External IP add "http://" example http://136.112.135.44
 
-![31](./3-10-26_screenshots/31.png)
+![31](./screenshots/31.png)
 
 - paste into your browser to verify
 
@@ -422,7 +422,7 @@ click - Create
 
 # Deliverable 3
 
-![32](./3-10-26_screenshots/32.png)
+![32](./screenshots/32.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -431,7 +431,7 @@ click - Create
 # 6) Teardown 
 - click instances and press delete
 
-![33](./3-10-26_screenshots/33.png)
+![33](./screenshots/33.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
