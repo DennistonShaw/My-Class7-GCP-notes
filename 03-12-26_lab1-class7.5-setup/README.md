@@ -382,6 +382,7 @@ don't use My First Project (looks unprofessional). Go to the project you created
 ![25](./3-10-26_screenshots/25.png)
 
 3. see the menu on the left hand side:
+- note: click create after you've gone through all the sections changes
 - Machine configuration (no changes)
   
 ![26](./3-10-26_screenshots/26.png)
