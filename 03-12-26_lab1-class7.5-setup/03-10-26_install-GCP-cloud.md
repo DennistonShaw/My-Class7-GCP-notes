@@ -18,7 +18,9 @@ Theo University - Class 7.5 / SEIR-1 (GCP, March 2026)
 - [Deliverable 1](#deliverable-1)
 - [4) GCP CLI](#4-gcp-cli)
 - [Deliverable 2](#deliverable-2)
+- [5) Creating an instance](#5-creating-an-instance)
 - [Deliverable 3](#deliverable-3)
+- [6) Teardown](#6-teardown)
 
 
 ---
@@ -367,19 +369,68 @@ gcloud info
 
 ---
 
-# Deliverable 3
+# 5) Creating an instance
 
-Datat protection no backup
-Network  Allow HTTP
-add Automation script from Theo's Github
+1. After creating your Google Cloud account go to https://console.cloud.google.com/
+don't use My First Project (looks unprofessional). Go to the project you created
 
 ![24](./3-10-26_screenshots/24.png)
+
+2. Create a VM
+- click the box or search for Create VM in the search box at the top
+
+![25](./3-10-26_screenshots/25.png)
+
+3. see the menu on the left hand side:
+- Machine configuration (no changes)
+  
+![26](./3-10-26_screenshots/26.png)
+
+#### OS and Storage (no changes)
+#### Data Protection (select No backups)
+
+![27](./3-10-26_screenshots/27.png)
+
+#### Network  
+- check Allow HTTP
+
+![28](./3-10-26_screenshots/28.png)
+
+#### Observability (no changes)
+#### Securtity (no changes)
+#### Advanced
+- copy [Startup script](https://github.com/BalericaAI/SEIR-1/blob/main/weekly_lessons/weeka/userscripts/basic.sh) (user data) and paste it in Automation box 
+
+![29](./3-10-26_screenshots/29.png)
+
+click - Create
+ 
+![30](./3-10-26_screenshots/30.png)
+
+#### Verify it works
+- copy the External IP add "http://" example http://136.112.135.44
+
+![31](./3-10-26_screenshots/31.png)
+
+- paste into your browser to verify
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ---
 
-Teardown 
+# Deliverable 3
+
+![32](./3-10-26_screenshots/32.png)
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+---
+
+# 6) Teardown 
 - click instances and press delete
+
+![33](./3-10-26_screenshots/33.png)
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ---
